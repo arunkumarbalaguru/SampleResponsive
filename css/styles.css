@@ -1,0 +1,172 @@
+html, body, div, span, input, button, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: poppins, Arial, sans-serif;
+    font-style: normal;
+    outline: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: playfair;
+    src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: playfairBold;
+    src: url(fonts/PlayfairDisplay-Bold.ttf);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*------ Stylish Scrollbar class start here ------*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    display: none;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track:hover {
+    background:transparent;
+    background-color:transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c1c1c1;
+    border: 4px solid transparent;
+    border-radius: 18px;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888585;
+}
+/*------ Stylish Scrollbar class End here ------*/
+
+/*------ Custom CSS Starts Here ------*/
+.so-hide {
+    display: none !important;
+}
+.so-header {
+    display: block;
+    height: 70px;
+    padding: 4vw;
+    color: #fff;
+    background-color: #6334ee;
+    border-bottom: 1px solid #6334ee;
+    box-shadow: 0 2px 6px rgba(99, 52, 238, 0.3);
+}
+.so-hamburger, .so-title {
+    display: inline-block;
+    height: 100%;
+    font-size: 1.6em;
+}
+.so-hamburger {
+    width: 8vw;
+}
+.so-main-wrapper {
+    height: calc(100% - 10vh);
+    position: fixed;
+}
+.so-container {
+    height: 100%;
+    padding: 0 1em;
+    overflow: scroll;
+}
+.so-row {
+    margin: 5vw 2vw;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(99, 52, 238, 0.3);
+}
+/* .so-delete {
+    width: 10%;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transform: rotate(270deg);
+    vertical-align: middle;
+    margin-top: -10em;
+} */
+.so-wrapper {
+    min-height: 150px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: small;
+    display: inline-block;
+}
+.so-delete {
+    display: none;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 10px;
+    height: 0;
+    background: red;
+    top: 10px;
+    border-radius: 5px;
+    width: 40px;
+}
+.so-delete i {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 10px;
+}
+.so-delete span {
+    font-size: 16px;
+    word-wrap: break-word;
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-left: -27px;
+    position: absolute;
+    bottom: 50%;
+}
+.so-delete-case .so-delete {
+    display: block;
+    height: 90%;
+    padding: 0px 15px;
+}
+.so-person-container {
+    display: inline-block;
+    padding: 1em;
+}
+.so-delete-case .so-person-container {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+}
+.so-avatar-container {
+    display: inline-block;
+}
+.so-avatar {
+    width: 15%;
+    border-radius: 50%;
+}
+.so-person-title {
+    display: inline-block;
+    line-height: 1;
+    margin-left: 2vw;
+}
+.so-person-name {
+    font-size: 22px;
+    display: block;
+}
+.so-person-duration {
+    font-size: 10px;
+    color: #848484;
+    vertical-align: middle;
+}
+.so-person-details {
+    padding: 1em;
+    font-weight: 400;
+    font-size: 12px;
+}
+/*------ Custom CSS Ends Here ------*/
